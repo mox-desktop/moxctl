@@ -1,11 +1,6 @@
 {
-  pkg-config,
-  lua5_4,
-  libpulseaudio,
   lib,
   rustPlatform,
-  installShellFiles,
-  scdoc,
 }:
 let
   cargoToml = builtins.fromTOML (builtins.readFile ../Cargo.toml);
