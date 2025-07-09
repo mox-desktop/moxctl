@@ -1,7 +1,4 @@
-{
-  lib,
-  rustPlatform,
-}:
+{ lib, rustPlatform }:
 let
   cargoToml = builtins.fromTOML (builtins.readFile ../Cargo.toml);
 in
@@ -19,11 +16,6 @@ rustPlatform.buildRustPackage {
       ]
     );
   };
-
-  nativeBuildInputs = [
-  ];
-
-  buildInputs = [ ];
 
   meta = with lib; {
     description = "Idle daemon with conditional timeouts and built-in audio inhibitor";

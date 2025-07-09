@@ -5,10 +5,6 @@
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    wgsl_analyzer = {
-      url = "github:wgsl-analyzer/wgsl-analyzer";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
   outputs =
@@ -49,5 +45,9 @@
       packages = forAllSystems (pkgs: {
         default = pkgs.callPackage ./nix/package.nix { };
       });
+
+      homeManagerModules = {
+        default = import ./nix/home-manager.nix;
+      };
     };
 }
