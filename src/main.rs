@@ -56,6 +56,7 @@ async fn main() -> anyhow::Result<()> {
             .find(|p| p.ends_with(&format!("mox{}ctl", subcmd)))
         {
             let args: Vec<String> = std::env::args().skip(2).collect();
+            println!("{subcmd}");
 
             Command::new(path).args(&args).spawn()?.wait()?;
         }

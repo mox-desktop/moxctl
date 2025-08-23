@@ -17,12 +17,12 @@ rustPlatform.buildRustPackage {
     );
   };
 
-  meta = with lib; {
+  meta = {
     description = "Idle daemon with conditional timeouts and built-in audio inhibitor";
     mainProgram = "moxctl";
     homepage = "https://github.com/unixpariah/moxidle";
-    license = licenses.gpl3;
-    maintainers = with maintainers; [ unixpariah ];
-    platforms = platforms.unix;
+    license = lib.licenses.gpl3;
+    maintainers = builtins.attrValues { inherit (lib.maintainers) unixpariah; };
+    platforms = lib.platforms.unix;
   };
 }
