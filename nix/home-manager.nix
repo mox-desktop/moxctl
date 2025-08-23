@@ -2,7 +2,6 @@
   config,
   lib,
   pkgs,
-  self,
   ...
 }:
 let
@@ -12,10 +11,7 @@ in
 {
   options.programs.moxctl = {
     enable = lib.mkEnableOption "moxctl";
-    package = lib.mkOption {
-      type = types.package;
-      default = self.packages.${pkgs.hostPlatform.system}.moxctl;
-    };
+    package = lib.mkPackageOption pkgs "moxctl" { };
   };
 
   config = lib.mkIf cfg.enable { home.packages = [ cfg.package ]; };

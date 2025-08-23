@@ -9,7 +9,6 @@
 
   outputs =
     {
-      self,
       nixpkgs,
       rust-overlay,
       ...
@@ -26,8 +25,8 @@
           system:
           let
             pkgs = import nixpkgs {
-              system = system;
-              overlays = overlays;
+              inherit system;
+              inherit overlays;
             };
           in
           function pkgs
@@ -74,7 +73,7 @@
       });
 
       homeManagerModules = {
-        default = import ./nix/home-manager.nix { inherit self; };
+        default = import ./nix/home-manager.nix;
       };
     };
 }
