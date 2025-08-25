@@ -9,6 +9,7 @@
 
   outputs =
     {
+      self,
       nixpkgs,
       rust-overlay,
       ...
@@ -60,16 +61,17 @@
       });
 
       packages = forAllSystems (pkgs: {
-        default = pkgs.callPackage ./nix/package.nix {
+        moxctl = pkgs.callPackage ./nix/package.nix {
           rustPlatform =
             let
-              rust-bin = (pkgs.rust-bin.selectLatestNightlyWith (toolchain: toolchain.minimal));
+              rust-bin = pkgs.rust-bin.stable.latest.default;
             in
             pkgs.makeRustPlatform {
               cargo = rust-bin;
               rustc = rust-bin;
             };
         };
+        default = self.packages.${pkgs.system}.moxctl;
       });
 
       homeManagerModules = {

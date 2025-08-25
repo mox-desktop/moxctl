@@ -6,7 +6,6 @@
 }:
 let
   cfg = config.programs.moxctl;
-  inherit (lib) types;
 in
 {
   options.programs.moxctl = {
