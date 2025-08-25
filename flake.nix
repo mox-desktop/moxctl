@@ -75,7 +75,8 @@
       });
 
       homeManagerModules = {
-        default = import ./nix/home-manager.nix;
+        moxctl = import ./nix/home-manager.nix;
+        default = self.homeManagerModules.moxctl;
       };
     };
 }
