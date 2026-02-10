@@ -1,5 +1,5 @@
 {
-  inputs.tooling.url = "github:mox-desktop/tooling";
+  inputs.tooling.url = "git+https://git.r0chd.pl/mox-desktop/tooling.git";
 
   outputs =
     { self, tooling, ... }:

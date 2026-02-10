@@ -2,11 +2,11 @@
   "nodes": {
     "nixpkgs": {
       "locked": {
-        "lastModified": 1770197578,
-        "narHash": "sha256-AYqlWrX09+HvGs8zM6ebZ1pwUqjkfpnv8mewYwAo+iM=",
+        "lastModified": 1770562336,
+        "narHash": "sha256-ub1gpAONMFsT/GU2hV6ZWJjur8rJ6kKxdm9IlCT0j84=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "00c21e4c93d963c50d4c0c89bfa84ed6e0694df2",
+        "rev": "d6c71932130818840fc8fe9509cf50be8c64634f",
         "type": "github"
       },
       "original": {
@@ -29,11 +29,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1770520253,
-        "narHash": "sha256-6rWuHgSENXKnC6HGGAdRolQrnp/8IzscDn7FQEo1uEQ=",
+        "lastModified": 1770693064,
+        "narHash": "sha256-Pomhlz+3/6uRJUhKz/kJwmJUux8GTWbXlCX4/RxlXLo=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "ebb8a141f60bb0ec33836333e0ca7928a072217f",
+        "rev": "a5f6d8a6a6868db2a3055cfe2b5dd01422780433",
         "type": "github"
       },
       "original": {
@@ -48,17 +48,17 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1758049156,
+        "lastModified": 1770559576,
         "narHash": "sha256-1WwkfzlRgYs8YmDlflTqJvbKowZMtOW946dXdVCLgPM=",
-        "owner": "mox-desktop",
-        "repo": "tooling",
-        "rev": "489521b7a1a38d76491c9b443e4af9beec7f0350",
-        "type": "github"
+        "ref": "refs/heads/master",
+        "rev": "bbc1320c1461090430b1d662084485678753c40d",
+        "revCount": 8,
+        "type": "git",
+        "url": "https://git.r0chd.pl/mox-desktop/tooling.git"
       },
       "original": {
-        "owner": "mox-desktop",
-        "repo": "tooling",
-        "type": "github"
+        "type": "git",
+        "url": "https://git.r0chd.pl/mox-desktop/tooling.git"
       }
     }
   },
