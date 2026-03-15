@@ -29,11 +29,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1772939270,
-        "narHash": "sha256-HbxD5DJAKxzo0G8on5wdY+OZNiUWt3FTvGmXmVEmg7g=",
+        "lastModified": 1773025773,
+        "narHash": "sha256-Wik8+xApNfldpUFjPmJkPdg0RrvUPSWGIZis+A/0N1w=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "bb93f191a07c0165992ed6d0b4197ee5c7e6e641",
+        "rev": "3c06fdbbd36ff60386a1e590ee0cd52dcd1892bf",
         "type": "github"
       },
       "original": {
@@ -48,11 +48,11 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1771236167,
-        "narHash": "sha256-sUQx8PsGU9j1vtX/znsykJkSNOEfp7RdqcL4ZL0S33U=",
+        "lastModified": 1773080983,
+        "narHash": "sha256-b8JBB2JcTCLI29oowPU8q9iZfsgy1GTRSxpRMaDzHfE=",
         "ref": "refs/heads/master",
-        "rev": "a0c8c6919c0bedb9c03479ff636c1ebf82de3d8d",
-        "revCount": 10,
+        "rev": "aa70f3ef6d5c2a81cc054d6880d8399df2221e30",
+        "revCount": 11,
         "type": "git",
         "url": "https://git.r0chd.pl/mox-desktop/tooling.git"
       },
